@@ -8,9 +8,9 @@ export default function Home({pro}) {
     const imgUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`;
   return (
     <div className='flex flex-1/2'>
-            <div className='flex bg-blue-400 my-7 rounded-2xl'>
-                <img src={imgUrl} alt={pro.name}/>
-                <h1 className='flex items-center pr-4'>{pro.name}</h1>
+            <div className='flex w-[200px] bg-blue-400 my-7 rounded-2xl'>
+                <img className='pr-2' src={imgUrl} alt={pro.name}/>
+                <h1 className='flex items-center'>{pro.name}</h1>
             </div>
     </div>
   )
